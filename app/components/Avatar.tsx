@@ -2,8 +2,16 @@
 
 import Image from "next/image";
 
-export default function Avatar() {
+const Avatar = () => {
   return (
-    <Image className="rounded-full" height="30" width="30" alt="Avarta" src="/images/placeholder.jpg" />
-  )
-}
+    <Image
+      className="rounded-full"
+      height="30"
+      width="30"
+      alt="Avarta"
+      src="/images/placeholder.jpg"
+    />
+  );
+};
+
+export default Avatar;
