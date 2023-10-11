@@ -8,6 +8,7 @@ const Logo = () => {
 
   return (
     <Image
+      onClick={() => router.push("/")}
       alt="Logo"
       className=" hidden md:block cursor-pointer"
       height="100"
@@ -15,6 +16,6 @@ const Logo = () => {
       src="/images/logo.png"
     />
   );
-}
- 
+};
+
 export default Logo;
