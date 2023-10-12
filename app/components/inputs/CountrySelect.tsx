@@ -32,6 +32,11 @@ const CountrySelect: React.FC<CountrySelectProps> = ({ value, onChange }) => {
             <div>
               {option.value === "AU" ||
               option.value === "US" ||
+              option.value === "DE" ||
+              option.value === "IT" ||
+              option.value === "JP" ||
+              option.value === "CA" ||
+              option.value === "NZ" ||
               option.value === "KR" ? (
                 <Image
                   className=""
