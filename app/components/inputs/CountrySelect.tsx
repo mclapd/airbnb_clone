@@ -43,7 +43,7 @@ const CountrySelect: React.FC<CountrySelectProps> = ({ value, onChange }) => {
                   height="25"
                   width="25"
                   alt="Country flag"
-                  src={`/images/country_flags/${option.value}.svg`}
+                  src={`/images/country_flags/${option.value.toLowerCase()}.svg`}
                 />
               ) : (
                 <div>{option.flag}</div>
