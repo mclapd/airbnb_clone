@@ -2,12 +2,14 @@
 
 import { CldUploadWidget } from "next-cloudinary";
 import Image from "next/image";
-import React, { useCallback } from "react";
+import { useCallback } from "react";
 import { TbPhotoPlus } from "react-icons/tb";
 
 declare global {
   var cloudinary: any;
 }
+
+const uploadPreset = "os9ik57g";
 
 interface ImageUploadProps {
   onChange: (value: string) => void;
@@ -24,7 +26,7 @@ const ImageUpload: React.FC<ImageUploadProps> = ({ onChange, value }) => {
   return (
     <CldUploadWidget
       onUpload={handleUpload}
-      uploadPreset="os9ik57g"
+      uploadPreset={uploadPreset}
       options={{
         maxFiles: 1,
       }}
@@ -40,7 +42,7 @@ const ImageUpload: React.FC<ImageUploadProps> = ({ onChange, value }) => {
             {value && (
               <div className="absolute inset-0 w-full h-full">
                 <Image
-                  alt="Upload"
+                  alt="House"
                   fill
                   style={{ objectFit: "cover" }}
                   src={value}
