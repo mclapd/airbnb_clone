@@ -93,7 +93,7 @@ const ListingClient: React.FC<ListingClientProps> = ({
         setTotalPrice(listing.price);
       }
     }
-  });
+  }, [dateRange, listing.price]);
 
   const category = useMemo(() => {
     return categories.find((item) => item.label === listing.category);
