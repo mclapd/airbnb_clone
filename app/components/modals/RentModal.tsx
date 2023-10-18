@@ -70,7 +70,7 @@ const RentModal = () => {
       dynamic(() => import("../Map"), {
         ssr: false,
       }),
-    [location]
+    []
   );
 
   const setCustomerValue = (id: string, value: any) => {
