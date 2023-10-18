@@ -26,6 +26,7 @@
     "prisma": "^5.4.2",
     "query-string": "^8.1.0",
     "react": "^18",
+    "react-date-range": "^1.4.0",
     "react-dom": "^18",
     "react-hook-form": "^7.47.0",
     "react-hot-toast": "^2.4.1",
@@ -38,6 +39,7 @@
   "devDependencies": {
     "@types/node": "^20",
     "@types/react": "^18",
+    "@types/react-date-range": "^1.4.5",
     "@types/react-dom": "^18",
     "autoprefixer": "^10.4.16",
     "postcss": "^8.4.31",
