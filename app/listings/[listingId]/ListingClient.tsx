@@ -51,6 +51,11 @@ const ListingClient: React.FC<ListingClientProps> = ({
     return dates;
   }, [reservations]);
 
+  const category = useMemo(() => {
+     return categories.find((items) => 
+      items.label === listing.category);
+  }, [listing.category]);
+
   const [isLoading, setIsLoading] = useState(false);
   const [totalPrice, setTotalPrice] = useState(listing.price);
   const [dateRange, setDateRange] = useState<Range>(initialDateRange);
@@ -95,9 +100,6 @@ const ListingClient: React.FC<ListingClientProps> = ({
     }
   }, [dateRange, listing.price]);
 
-  const category = useMemo(() => {
-    return categories.find((item) => item.label === listing.category);
-  }, [listing.category]);
   return (
     <Container>
       <div className="max-w-screen-lg mx-auto">

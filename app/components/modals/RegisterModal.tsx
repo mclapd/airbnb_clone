@@ -38,7 +38,7 @@ const RegisterModal = () => {
     axios
       .post("/api/register", data)
       .then(() => {
-        toast.success("Success!");
+        toast.success("Registered!");
         registerModal.onClose();
         loginModal.onOpen();
       })
@@ -50,7 +50,7 @@ const RegisterModal = () => {
       });
   };
 
-  const toggle = useCallback(() => {
+  const onToggle = useCallback(() => {
     registerModal.onClose();
     loginModal.onOpen();
   }, [registerModal, loginModal]);
@@ -105,7 +105,7 @@ const RegisterModal = () => {
         <div className="justify-center flex flex-row items-center gap-2">
           <div>Already have an account?</div>
           <div
-            onClick={toggle}
+            onClick={onToggle}
             className="text-neutral-800 cursor-pointer hover:underline"
           >
             Log in

@@ -169,7 +169,7 @@ const RentModal = () => {
       <div className="flex flex-col gap-8">
         <Heading
           title="Share some basics about your place"
-          subtitle="What amenities do you have?"
+          subtitle="What amenitis do you have?"
         />
         <Counter
           title="Guests"
@@ -215,7 +215,7 @@ const RentModal = () => {
       <div className="flex flex-col gap-8">
         <Heading
           title="How would you describe your place"
-          subtitle="Short and sweek works best!"
+          subtitle="Short and sweet works best!"
         />
         <Input
           id="title"
